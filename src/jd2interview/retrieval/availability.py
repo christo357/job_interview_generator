@@ -4,7 +4,7 @@ from collections import Counter
 from typing import Dict, List, Tuple, Optional
 from sqlalchemy import select
 from jd2interview.skills.query import top_k_skills_for_role
-from jd2interview.storage.db import session_scope, Question, QuestionMeta
+from jd2interview.storage.db import SessionLocal, Question, QuestionMeta
 
 def _rows_for_role(db, role_id: int, topk: int = 8, limit: int = 5000):
     skills = [s for s,_ in top_k_skills_for_role(role_id, k=topk)]
@@ -28,7 +28,7 @@ def _rows_for_role(db, role_id: int, topk: int = 8, limit: int = 5000):
 
 def available_counts_for_role(role_id: int) -> Dict[str, int]:
     """Return counts per type in DB for this role (based on tag overlap)."""
-    with session_scope() as db:
+    with SessionLocal() as db:
         ids = _rows_for_role(db, role_id)
         if not ids:
             return {"Behavioral":0,"Technical":0,"Coding":0,"System Design":0,"Total":0}
@@ -41,54 +41,99 @@ def available_counts_for_role(role_id: int) -> Dict[str, int]:
     return out
 
 
+# def fetch_typed_questions_for_role(
+#     role_id: int,
+#     qtype: Optional[str] = None,                # "Behavioral" | "Technical" | "Coding" | "System Design" | None (all)
+#     sources: Optional[List[str]] = None,        # e.g., ["stackexchange","generated"] or None (all)
+#     limit: int = 10000
+# ) -> List[Dict]:
+#     """
+#     Return typed, role-relevant questions with metadata, persisted in DB.
+#     Role relevance = tag overlap with top-k skills (same logic as availability).
+#     """
+#     from jd2interview.retrieval.availability import _relevant_ids_for_role
+#     with SessionLocal() as db:
+#         ids = _relevant_ids_for_role(db, role_id, topk=8, limit=limit)
+#         if not ids:
+#             return []
+#         # Join Question + QuestionMeta
+#         q = (
+#             select(Question, QuestionMeta)
+#             .join(QuestionMeta, QuestionMeta.question_id == Question.id)
+#             .where(Question.id.in_(ids))
+#             .order_by(Question.score.desc(), Question.id.desc())
+#         )
+#         rows = db.execute(q).all()
+
+#     out = []
+#     for Q, M in rows:
+#         if qtype and M.qtype != qtype:
+#             continue
+#         if sources and Q.source not in sources:
+#             continue
+#         try:
+#             rubric = json.loads(M.rubric_json or "{}")
+#         except Exception:
+#             rubric = {}
+#         try:
+#             tags = json.loads(Q.tags_json or "[]")
+#         except Exception:
+#             tags = []
+#         out.append({
+#             "id": Q.id,
+#             "question": (Q.title or "") + ("\n\n" + (Q.body_markdown or Q.body_html or "") if (Q.body_markdown or Q.body_html) else ""),
+#             "type": M.qtype,
+#             "difficulty": M.difficulty,
+#             "evaluation_rubric": rubric,
+#             "url": Q.url,
+#             "tags": tags,
+#             "source": Q.source,
+#         })
+#     return out
+
 def fetch_typed_questions_for_role(
     role_id: int,
-    qtype: Optional[str] = None,                # "Behavioral" | "Technical" | "Coding" | "System Design" | None (all)
-    sources: Optional[List[str]] = None,        # e.g., ["stackexchange","generated"] or None (all)
-    limit: int = 10000
+    qtype: Optional[str] = None,
+    sources: Optional[List[str]] = None,
+    limit: int = 10000,
 ) -> List[Dict]:
-    """
-    Return typed, role-relevant questions with metadata, persisted in DB.
-    Role relevance = tag overlap with top-k skills (same logic as availability).
-    """
-    from jd2interview.retrieval.availability import _relevant_ids_for_role
-    with session_scope() as db:
-        ids = _relevant_ids_for_role(db, role_id, topk=8, limit=limit)
+    out: List[Dict] = []
+    with SessionLocal() as db:
+        ids = relevant_question_ids_for_role(db, role_id, topk=8, limit=limit)
         if not ids:
-            return []
-        # Join Question + QuestionMeta
+            return out
         q = (
             select(Question, QuestionMeta)
             .join(QuestionMeta, QuestionMeta.question_id == Question.id)
             .where(Question.id.in_(ids))
             .order_by(Question.score.desc(), Question.id.desc())
         )
-        rows = db.execute(q).all()
-
-    out = []
-    for Q, M in rows:
-        if qtype and M.qtype != qtype:
-            continue
-        if sources and Q.source not in sources:
-            continue
-        try:
-            rubric = json.loads(M.rubric_json or "{}")
-        except Exception:
-            rubric = {}
-        try:
-            tags = json.loads(Q.tags_json or "[]")
-        except Exception:
-            tags = []
-        out.append({
-            "id": Q.id,
-            "question": (Q.title or "") + ("\n\n" + (Q.body_markdown or Q.body_html or "") if (Q.body_markdown or Q.body_html) else ""),
-            "type": M.qtype,
-            "difficulty": M.difficulty,
-            "evaluation_rubric": rubric,
-            "url": Q.url,
-            "tags": tags,
-            "source": Q.source,
-        })
+        for Q, M in db.execute(q).all():
+            if qtype and M.qtype != qtype:
+                continue
+            if sources and Q.source not in sources:
+                continue
+            try:
+                rubric = json.loads(M.rubric_json or "{}")
+            except Exception:
+                rubric = {}
+            try:
+                tags = json.loads(Q.tags_json or "[]")
+            except Exception:
+                tags = []
+            out.append({
+                "id": Q.id,
+                "question": (Q.title or "") + (
+                    "\n\n" + (Q.body_markdown or Q.body_html or "")
+                    if (Q.body_markdown or Q.body_html) else ""
+                ),
+                "type": M.qtype,
+                "difficulty": M.difficulty,
+                "evaluation_rubric": rubric,
+                "url": Q.url,
+                "tags": tags,
+                "source": Q.source,
+            })
     return out
 
 def relevant_question_ids_for_role(
