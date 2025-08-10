@@ -154,6 +154,8 @@ python -m jd2interview.parsing.extract
 ```
 
 ---
+<!---
+
 ## 11. Testing JD Parsing Without an API Key
 If no key is present the config prints a warning and LLM calls will fail fast. For offline dev you can stub or mock `extract_structured` or set a dummy implementation.
 
@@ -167,6 +169,7 @@ If no key is present the config prints a warning and LLM calls will fail fast. F
 - Automated evaluation rubric generation improvements
 
 ---
+-->
 
-## 13. Disclaimer
+## 11. Disclaimer
 Do not use generated questions verbatim for high‑stakes interviews without human review.
