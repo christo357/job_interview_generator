@@ -1,0 +1,12 @@
+AI Algorithm Engineer Intern
+
+Responsibilities:
+Develop cutting-edge AI algorithms for career training and recruitment.
+Optimize machine learning models and LLMs for performance and scalability.
+Analyze large datasets and create innovative AI-driven solutions.
+Collaborate with product and engineering teams to integrate AI into the platform.
+
+Requirements:
+Background in Computer Science, Mathematics, or related fields.
+Expertise in machine learning, deep learning, and AI algorithms.
+Skilled in Python, TensorFlow, PyTorch, and LLM techniques (e.g., RAG, fine-tuning).

@@ -1,0 +1,40 @@
+Company Description
+
+The Bosch Research and Technology Center North America with offices in Sunnyvale, California, Pittsburgh, Pennsylvania and Cambridge, Massachusetts is part of the global Bosch Group (www.bosch.com), a company with over 70 billion euro revenue, 400,000 people worldwide, a very diverse product portfolio, and a history of over 125 years. The Research and Technology Center North America (RTC-NA) is committed to providing technologies and system solutions for various Bosch business fields primarily in the areas of Human Machine Interaction (HMI), Robotics, Energy Technologies, Internet Technologies, Circuit Design, Semiconductors and Wireless, and MEMS Advanced Design.*
+
+Job Description
+
+The ideal candidate will passionately drive and further advance innovations in the field of artificial intelligence, such as deep learning, generative modeling, neural programming, and their applications to emerging areas such as contrastive learning, multimodal learning, high-dimensional perception, foundation models, etc. The work includes conducting advanced research and development of novel algorithms and conducting experiments to bring innovation ideas to products. Responsibilities include but not limited to:
+
+Define and conduct cutting-edge research and engineering projects in AI, deep learning and generative modeling in areas such as contrastive learning, multimodal learning, high-dimensional perception, foundation models. 
+Work with an international team of experts to transfer the results of advanced research to Bosch business units. Benchmark, validate and test research ideas on large scale datasets. 
+Summarize research findings in high-quality paper and/or patent submissions. 
+
+Qualifications
+
+Required:
+
+Currently pursuing PhD degree in Computer Science / Systems Engineering or a related technical field. 
+Hands-on experience in deep learning and/or AI system topics with focus on at least two of the following areas: machine learning theory, contrastive learning, generative AI, multimodal learning, and foundation models. 
+Programming experience in Python, and hands-on experience with common machine learning libraries such as Tensorflow, PyTorch, etc. 
+
+Desired
+
+Publication record in top venues in robotics/machine learning/computer vision, e.g., ICRA, IROS, RSS, NeurIPS, ICML, ICLR, CVPR, ICCV, and ECCV. 
+Strong communication skills and ability to convey research ideas to a broad audience. 
+Strong leadership skills with excellent English communication & teamwork skills. 
+Experience working with big data and associated distributed processing tools (e.g., Spark) as well as cloud services (e.g., AWS, Azure) 
+
+Additional Information
+
+On-site Internship
+Duration: 13 weeks
+
+The U.S. base salary range for this intern position is $35.00-$68.00 hourly. Within the range, individual pay is determined based on several factors, including, but not limited to, type of degree, work experience and job knowledge, complexity of the role, type of position, job location, etc. Your Hiring Manager can share more details about the specific salary range for this position during the interview process.
+
+By choice, we are committed to a diverse workforce - EOE/Protected Veteran/Disabled.
+
+BOSCH is a proud supporter of STEM (Science, Technology, Engineering & Mathematics)
+
+FIRST Robotics (For Inspiration and Recognition of Science and Technology)
+AWIM (A World In Motion)

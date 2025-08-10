@@ -1,0 +1,18 @@
+[project]
+name = "jd2interview"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+  "gradio>=4.0.0",
+  "langchain>=0.2.0",
+  "langchain-openai>=0.1.8",
+  "openai>=1.35.0",
+  "tiktoken>=0.6.0",
+]
+
+[project.scripts]
+jd2i = "jd2interview.__main__:main"
+jd2i-app = "jd2interview.ui.gradio_app:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

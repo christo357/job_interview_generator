@@ -1,0 +1,29 @@
+[About the job
+We are a dynamic and innovative company in the software development industry, as an AI Intern. We're a small but passionate team of 1-10 professionals dedicated to creating impactful digital solutions. We believe in the power of Accessibility, ensuring that our products are usable by everyone, and Accountability, taking responsibility for our work and its impact. We foster a culture of Belonging, where every team member feels valued and included, and we encourage Boldness, pushing boundaries to achieve excellence. This internship offers a unique opportunity to gain hands-on experience in artificial intelligence, work closely with experienced mentors, and contribute to exciting projects. If you're eager to learn, grow, and make a meaningful contribution in a supportive and forward-thinking environment, we'd love to hear from you. Embark on your AI journey with us and help shape the future of technology.
+Tasks
+
+Collaborate with the development team to design and implement AI-driven software solutions that align with company values.
+
+Assist in conducting research and data analysis to improve the accessibility and efficiency of AI applications.
+
+Participate in team meetings and contribute innovative ideas to enhance project outcomes while ensuring accountability and belonging within the team.
+
+Support the testing and debugging processes for new AI features to ensure they meet high standards of quality and boldness.
+
+Document code, methodologies, and findings to maintain clear and comprehensive records for future reference and team collaboration.
+
+
+Requirements
+
+Currently enrolled in or recently graduated from a Bachelor's or Master's program in Computer Science, Engineering, or related field.
+
+Passionate about AI and eager to learn and explore new technologies in the software development industry.
+
+Strong problem-solving skills and ability to work independently while being accountable for tasks.
+
+Excellent communication skills to foster a sense of belonging and collaboration within a small team.
+
+Bold and innovative mindset, ready to take on challenges and contribute creative ideas.
+], 
+
+

@@ -1,0 +1,29 @@
+Systems Engineering Intern - Fall 2025
+
+Mill is all about answering a simple question: how can we prevent waste? Less waste can save time, money, energy, maybe even our planet. And there’s no better place to start than food. Food waste is one of the most solvable climate problems facing us today. Plus, our trash really stinks. It’s gross, heavy, and our least favorite chore. At Mill we are striving to build a better environment for all, as we take on climate and kitchen change.
+
+Role Description
+
+This internship is for the time period of September through December 2025. As the Systems Engineering Team intern at an fast paced start-up, you’ll be working with a tight-knit team on a novel consumer product. Your day-to-day will include hands-on work with hardware components and lab equipment as well as building test set-ups. Since we’re a small team, your work and learning will span reliability, hardware, and system testing as we push towards launch. This internship is for someone who wants to learn about many different topics, be creatively challenged and be a part of creating new products.
+
+Responsibilities
+
+Work closely with the Mill cross functional team on the system design and validation of new products.
+Building test setups and exploring new ways to control our system
+Support system engineering testing activities by working with firmware, and product designers to troubleshoot and drive system level performance.
+Develop prototypes and execute tests in order to drive design towards mass production maturity.
+
+Minimum Qualifications
+
+BS or MS in Mechanical Engineering, Mechatronics, or Chemical Engineering (obtained or in progress)
+Working knowledge of controls and design of electro-mechanical systems.
+Familiar with 3D CAD and ideally some experience python programming
+Proficient in a variety of rapid prototyping methods.
+Strong analytical and communication skills.
+
+Preferred Qualifications
+
+Diverse interests and with hands on attitude 
+Experience with simulation tools (FEA and thermal) and statistical analysis methods.
+
+The estimated base hourly range for this position is $35 to $45, which does not include the value of benefits or a potential equity grant. A wide range of factors are considered in making compensation decisions, including but not limited to skill sets, market conditions, experience and training, licensure and certifications, and business and organizational needs. Applicants must be authorized to work for any employer in the U.S. We are unable to sponsor an employment visa for this role

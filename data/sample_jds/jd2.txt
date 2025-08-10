@@ -1,0 +1,77 @@
+Nokia is a leader in innovation and technology across mobile, fixed, and cloud networks. They are seeking a Software Dev AI/ML Co-op to work on improving development and prototyping in Virtualization/Cloud Computing, focusing on technologies such as Artificial Intelligence and Machine Learning pipelines.
+
+
+Electronics
+Enterprise Software
+Internet of Things
+Mobile Devices
+Telecommunications
+check
+Culture & Values
+check
+H1B Sponsor Likelynote
+
+Insider Connection @Nokia
+2 email credits available today
+note
+Discover valuable connections within the company who might provide insights and potential referrals.
+Get 3x more responses when you reach out via email instead of LinkedIn.
+Beyond your network
+N
+S
+Niharika Tomar & 1 connections
+From your previous company
+from your School
+S
+K
+Sean Doran & 1 connections
+@Rutgers University–New Brunswick and...
+Find Any Email
+
+Responsibilities
+Work on technologies to improve development & prototyping in Virtualization/Cloud Computing including technologies like:
+Container Technology/Kubernetes platforms
+Artificial Intelligence and Machine Learning pipelines
+Contribute to a project in ONE of the following areas:
+Data analytics/Machine Learning, including Exploratory Data Analysis
+Coding in C++/C and Python which will be used in the implementation of models for data pipeline (training, serving, testing)
+LSTM models, Embedding Models, Large Language Models (LLM) - encoders/decoders
+
+Qualification
+check
+Represents the skills you have
+Find out how your skills align with this job's requirements. If anything seems off, you can easily click on the tags to select or unselect skills to reflect your actual expertise.
+
+checkPython proficiency
+checkC++/C knowledge
+checkMachine Learning pipelines
+checkExploratory Data Analysis
+Container Technology/Kubernetes
+checkJupyter Notebooks
+checkData classification models
+Time series analysis
+checkLarge Language Models
+Networking IP Knowledge
+checkLinux familiarity
+checkGit knowledge
+checkAI tools knowledge
+Required
+Currently a candidate pursuing a bachelors or masters degree in Data Science, Computer Science, Computer Engineering, or a related field with an accredited school in the US.
+Pursuing a Data Science degree or degree in a similar field with some experience in data classification models, time series, and large language models.
+Python proficiency, C++/C language knowledge
+Experience with the Exploratory Data Analysis (EDA) process - end to end, including projects utilizing the EDA
+Jupyter Notebooks and knowledge of common AI prototyping tools/libraries.
+Preferred
+Networking IP Knowledge (IPv6/IPv4), familiarity with Linux, Git, and AI tools: MLFlow, AirFlow, and Scikit Learn.
+
+Benefits
+Corporate Retirement Savings Plan
+Health and dental benefits
+Short-term disability, and long-term disability
+Life insurance, and AD&D – Company paid 2x base pay
+Optional or Supplemental life and AD&D insurance (Employee/Spouse/Child)
+Paid time off for holidays and Vacation
+Employee Stock Purchase Plan
+Tuition Assistance Plan
+Adoption assistance
+Employee Assistance Program/Work Life Resource Program

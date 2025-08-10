@@ -1,0 +1,26 @@
+# pip dependencies (OpenAI, langchain, gradio, faiss-cpu, sentence-transformers …)
+requests 
+beautifulsoup4
+selenium
+webdriver-manager
+pandas
+numpy
+openai
+langchain
+langchain-openai
+pydantic
+pydantic-settings
+networkx
+matplotlib
+pyvis
+datasketch
+mmh3
+faiss-cpu
+sentence-transformers
+rapidfuzz
+python-dotenv
+gradio
+sqlalchemy
+aiohttp
+markdown
+bleach
