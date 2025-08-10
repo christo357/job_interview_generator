@@ -137,6 +137,8 @@ Planned / partial components:
 - Future: semantic reranking, answer scoring
 
 ---
+<!---
+
 ## 10. Development
 ```bash
 # Lint / format suggestions (add tooling as desired)
@@ -154,7 +156,7 @@ python -m jd2interview.parsing.extract
 ```
 
 ---
-<!---
+
 
 ## 11. Testing JD Parsing Without an API Key
 If no key is present the config prints a warning and LLM calls will fail fast. For offline dev you can stub or mock `extract_structured` or set a dummy implementation.
@@ -171,5 +173,5 @@ If no key is present the config prints a warning and LLM calls will fail fast. F
 ---
 -->
 
-## 11. Disclaimer
+## 10. Disclaimer
 Do not use generated questions verbatim for high‑stakes interviews without human review.
